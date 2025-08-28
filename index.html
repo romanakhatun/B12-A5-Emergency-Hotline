@@ -28,12 +28,14 @@
           </div>
           <div class="nav">
             <button class="love-btn">
-              <span>0</span> <img src="./assets/love.png" alt="" />
+              <span id="love-count">0</span>
+              <img src="./assets/love.png" alt="" />
             </button>
             <button class="coin-btn">
-              <span>0</span> <img src="./assets/coin.png" alt="" />
+              <span id="coin-count">100</span>
+              <img src="./assets/coin.png" alt="" />
             </button>
-            <button class="btn"><span>0</span> Copy</button>
+            <button class="btn"><span id="copy-count">0</span> Copy</button>
           </div>
         </header>
       </div>
@@ -55,12 +57,97 @@
                 <div class="image-bg">
                   <img src="./assets/police.png" alt="Police" />
                 </div>
-                <i class="fa-regular fa-heart pointer"></i>
+                <i id="heart" class="fa-regular fa-heart pointer"></i>
+              </div>
+              <h1 class="title">National Helpline</h1>
+              <p class="desc">Government Helpline Service</p>
+              <p class="number">333</p>
+              <p class="tag">Universal</p>
+              <div class="buttons">
+                <button class="btn-copy">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button id="call" class="btn-call">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image-wrapper">
+                <div class="image-bg">
+                  <img src="./assets/police.png" alt="Police" />
+                </div>
+                <i id="heart" class="fa-regular fa-heart pointer"></i>
+              </div>
+              <h1 class="title">Police</h1>
+              <p class="desc">Bangladesh Police</p>
+              <p class="number">999</p>
+              <p class="tag">Emergency</p>
+              <div class="buttons">
+                <button class="btn-copy">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button id="call" class="btn-call">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image-wrapper">
+                <div class="image-bg">
+                  <img src="./assets/police.png" alt="Police" />
+                </div>
+                <i class="heart fa-regular fa-heart pointer"></i>
               </div>
               <h1 class="title">Fire Service</h1>
               <p class="desc">Fire Service</p>
               <p class="number">999</p>
               <p class="tag">Fire</p>
+
+              <div class="buttons">
+                <button class="btn-copy">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button class="btn-call">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image-wrapper">
+                <div class="image-bg">
+                  <img src="./assets/police.png" alt="Police" />
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h1 class="title">Ambulance</h1>
+              <p class="desc">Ambulance Service</p>
+              <p class="number">999</p>
+              <p class="tag">Health</p>
+              <div class="buttons">
+                <button class="btn-copy">
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button class="btn-call">
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image-wrapper">
+                <div class="image-bg">
+                  <img src="./assets/police.png" alt="Police" />
+                </div>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <h1 class="title">Women & Child</h1>
+              <p class="desc">Violence & Child Protection Helpline</p>
+              <p class="number">109</p>
+              <p class="tag">Help</p>
               <div class="buttons">
                 <button class="btn-copy">
                   <i class="fa-regular fa-copy"></i> Copy
@@ -77,50 +164,10 @@
                 </div>
                 <i class="fa-regular fa-heart"></i>
               </div>
-              <h1 class="title">Fire Service</h1>
-              <p class="desc">Fire Service</p>
-              <p class="number">999</p>
-              <p class="tag">Fire</p>
-              <div class="buttons">
-                <button class="btn-copy">
-                  <i class="fa-regular fa-copy"></i> Copy
-                </button>
-                <button class="btn-call">
-                  <i class="fa-solid fa-phone"></i> Call
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="image-wrapper">
-                <div class="image-bg">
-                  <img src="./assets/police.png" alt="Police" />
-                </div>
-                <i class="fa-regular fa-heart"></i>
-              </div>
-              <h1 class="title">Fire Service</h1>
-              <p class="desc">Fire Service</p>
-              <p class="number">999</p>
-              <p class="tag">Fire</p>
-              <div class="buttons">
-                <button class="btn-copy">
-                  <i class="fa-regular fa-copy"></i> Copy
-                </button>
-                <button class="btn-call">
-                  <i class="fa-solid fa-phone"></i> Call
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <div class="image-wrapper">
-                <div class="image-bg">
-                  <img src="./assets/police.png" alt="Police" />
-                </div>
-                <i class="fa-regular fa-heart"></i>
-              </div>
-              <h1 class="title">Fire Service</h1>
-              <p class="desc">Fire Service</p>
-              <p class="number">999</p>
-              <p class="tag">Fire</p>
+              <h1 class="title">ACC Helpline</h1>
+              <p class="desc">Anti-Corruption Helpline</p>
+              <p class="number">106</p>
+              <p class="tag">Government</p>
               <div class="buttons">
                 <button class="btn-copy">
                   <i class="fa-regular fa-copy"></i> Copy
@@ -141,15 +188,7 @@
               <button class="btn">Clear</button>
             </div>
 
-            <div class="history-cards">
-              <div class="history-card">
-                <div class="history-info">
-                  <h1>Fire Service Number</h1>
-                  <p>999</p>
-                </div>
-                <h4>11:36:58 AM</h4>
-              </div>
-            </div>
+            <div id="history-cards-wrapper" class="history-cards"></div>
           </div>
         </div>
       </section>
