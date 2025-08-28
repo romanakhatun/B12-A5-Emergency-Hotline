@@ -27,15 +27,17 @@ for (const btn of callButtons) {
     console.log(historyData);
 
     const historyCardWrapper = document.getElementById("history-cards-wrapper");
-    for (const data of historyData) {
+    historyCardWrapper.innerHTML = "";
+
+    for (const item of historyData) {
       const cardDiv = document.createElement("div");
       cardDiv.innerHTML = `
         <div class="history-card">
           <div class="history-info">
-            <h1>${data.name}</h1>
-            <p>${data.number}</p>
+            <h1>${item.name}</h1>
+            <p>${item.number}</p>
           </div>
-          <h4>${data.date}</h4>
+          <h4>${item.date}</h4>
         </div>
       `;
 

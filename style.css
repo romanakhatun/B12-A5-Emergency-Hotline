@@ -250,6 +250,9 @@ body {
     align-items: center;
     gap: 10px;
   }
+}
+
+@media screen and (min-width: 1024px) {
   .services {
     display: flex;
     flex-direction: row;
@@ -257,8 +260,18 @@ body {
   }
 
   .service-cards {
-    flex: 2.3;
+    flex: 2;
     gap: 30px;
+  }
+
+  .history {
+    flex: 1.5;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .service-cards {
+    flex: 2.4;
   }
 
   .history {
