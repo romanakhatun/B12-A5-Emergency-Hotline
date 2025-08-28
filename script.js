@@ -9,7 +9,7 @@ for (const btn of callButtons) {
     const number = card.querySelector(".number").innerText;
     const coinCount = parseInt(document.getElementById("coin-count").innerText);
 
-    if (coinCount < 1) {
+    if (coinCount < 20) {
       alert("❌ You don't have sufficient coins");
       return;
     }
@@ -20,7 +20,12 @@ for (const btn of callButtons) {
     const data = {
       name: title,
       number: number,
-      date: new Date().toLocaleTimeString(),
+      date: new Date().toLocaleTimeString("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        second: "numeric",
+        hour12: true,
+      }),
     };
 
     historyData.push(data);

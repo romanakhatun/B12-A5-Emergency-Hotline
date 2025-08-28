@@ -49,8 +49,7 @@ body {
   color: #5c5c5c;
   border-radius: 50px;
   background: rgba(65, 255, 107, 0.1);
-  padding: 11px;
-  padding: 12px 36px;
+  padding: 12px 15px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -58,6 +57,17 @@ body {
 .coin-btn img {
   width: 30px;
   height: 30px;
+}
+
+.btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background: rgba(0, 166, 62, 1);
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .hero {
@@ -79,15 +89,18 @@ body {
   width: 92px;
   height: 92px;
 }
+
 .hero h2 {
-  font-size: 40px;
-  margin: 11px 0;
+  font-size: 24px;
   font-weight: 700;
+  margin: 8px 0;
 }
+
 .hero p {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
 }
+
 .services {
   padding: 32px 0px;
   display: flex;
@@ -199,16 +212,6 @@ body {
 .history-title i {
   color: #5c5c5c;
 }
-.btn {
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-  background: rgba(0, 166, 62, 1);
-  padding: 12px 36px;
-  font-size: 16px;
-  font-weight: 600;
-}
 
 .history-cards {
   display: flex;
@@ -249,6 +252,21 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+  .hero h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 11px 0;
+  }
+  .hero p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .love-btn,
+  .coin-btn,
+  .btn {
+    padding: 12px 36px;
   }
 }
 
