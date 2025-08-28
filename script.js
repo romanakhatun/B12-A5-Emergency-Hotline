@@ -36,6 +36,11 @@ for (const btn of callButtons) {
     }
   });
 }
+// clear data from history
+document.getElementById("clear-btn").addEventListener("click", function () {
+  document.getElementById("history-cards-wrapper").innerHTML = "";
+  historyData.length = 0;
+});
 
 //copy count
 const copyButtons = document.getElementsByClassName("btn-copy");
