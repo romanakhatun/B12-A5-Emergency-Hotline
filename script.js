@@ -8,7 +8,7 @@ for (const btn of callButtons) {
     const title = card.querySelector(".title").innerText;
     const number = card.querySelector(".number").innerText;
 
-    alert("Calling " + title + " " + number + " ...");
+    alert("📞 Calling " + title + " " + number + "...");
 
     const data = {
       name: title,
@@ -34,6 +34,21 @@ for (const btn of callButtons) {
 
       historyCardWrapper.appendChild(cardDiv);
     }
+  });
+}
+
+//copy count
+const copyButtons = document.getElementsByClassName("btn-copy");
+for (const btn of copyButtons) {
+  btn.addEventListener("click", function () {
+    const card = this.closest(".card");
+    const number = card.querySelector(".number").innerText;
+
+    navigator.clipboard.writeText(number);
+    alert("Number is copied: " + number);
+
+    const copyCount = parseInt(document.getElementById("copy-count").innerText);
+    document.getElementById("copy-count").innerText = copyCount + 1;
   });
 }
 
