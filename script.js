@@ -36,3 +36,13 @@ for (const btn of callButtons) {
     }
   });
 }
+
+// love to call
+const hearts = document.getElementsByClassName("fa-heart");
+
+for (const heart of hearts) {
+  heart.addEventListener("click", function () {
+    const loveCount = parseInt(document.getElementById("love-count").innerText);
+    document.getElementById("love-count").innerText = loveCount + 1;
+  });
+}
