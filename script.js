@@ -7,8 +7,15 @@ for (const btn of callButtons) {
 
     const title = card.querySelector(".title").innerText;
     const number = card.querySelector(".number").innerText;
+    const coinCount = parseInt(document.getElementById("coin-count").innerText);
+
+    if (coinCount < 1) {
+      alert("❌ You don't have sufficient coins");
+      return;
+    }
 
     alert("📞 Calling " + title + " " + number + "...");
+    document.getElementById("coin-count").innerText = coinCount - 20;
 
     const data = {
       name: title,
