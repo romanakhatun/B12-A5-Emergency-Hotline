@@ -8,9 +8,17 @@ Ans:
    - **querySelector(cssSelector)**: With this we get the element using CSS selector. Returns only the first matching element. Example: `document.querySelector(".btn")`
    - **querySelectorAll(cssSelector)**: With this we get multiple elements using CSS selector. Returns all elements in the form of *NodeList*. Example: `document.querySelectorAll("p")`
 
-#### 1. How do you create and insert a new element into the DOM?
+#### 2. How do you create and insert a new element into the DOM?
 Ans: 
-   - **Step-1**: const element = document.createElement("div") → create a new element
-   - **Step-2**: element.innerText = "Hello world" → set data into the element
-   - **step-2**: parent.appendChild(element) → Place it inside parent.
+   - **Step-1**: const newDiv = document.createElement("div"); → Create a new div element
+   - **Step-2**: newDiv.innerText = "Hello world"; → Set data into the div element
+   - **step-2**: document.getElementById("container").appendChild(newDiv); → Place div inside parent.
+
+#### 3. What is Event Bubbling and how does it work?
+Ans: **Event Bubbling**: When an event occurs on a child element, it propagates step by step from parent → grandparent → document.  Example: when a button is clicked, the event goes to the parent div.
+
+#### 4. What is Event Delegation in JavaScript? Why is it useful?
+Ans: **Event Delegation**: Handling the event of a child element by setting an event listener on the parent element.  Useful because →
+- If there are many child elements, you don't have to set a separate event for each.
+- It works even if a new element is added to the future.
    
