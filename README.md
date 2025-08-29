@@ -15,10 +15,15 @@ Ans:
    - **step-2**: document.getElementById("container").appendChild(newDiv); → Place div inside parent.
 
 #### 3. What is Event Bubbling and how does it work?
-Ans: **Event Bubbling**: When an event occurs on a child element, it propagates step by step from parent → grandparent → document.  Example: when a button is clicked, the event goes to the parent div.
+Ans: **Event Bubbling**: When an event occurs on a child element, it propagates step by step from parent → grandparent → document.  Ex. when a button is clicked, the event goes to the parent div.
 
 #### 4. What is Event Delegation in JavaScript? Why is it useful?
 Ans: **Event Delegation**: Handling the event of a child element by setting an event listener on the parent element.  Useful because →
 - If there are many child elements, you don't have to set a separate event for each.
 - It works even if a new element is added to the future.
+
+#### 5. What is the difference between preventDefault() and stopPropagation() methods?
+Ans:
+  - **preventDefault()**: Stops the default browser action. Ex. Stop reloading on form submit.
+  -  **stopPropagation()**: Stops the event from bubbling up to parent elements.  Ex. Preventing a parent element’s event handler from running when a child element is clicked.
    
