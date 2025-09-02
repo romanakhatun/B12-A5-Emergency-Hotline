@@ -9,7 +9,7 @@ for (const btn of callButtons) {
     const number = card.querySelector(".number").innerText;
     const coinCount = parseInt(document.getElementById("coin-count").innerText);
 
-    if (coinCount < 21) {
+    if (coinCount < 20) {
       alert("❌ You don't have sufficient coins");
       return;
     }
